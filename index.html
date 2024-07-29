@@ -19,26 +19,82 @@
       </nav>
       <div class="header-text">
             <p>Cyber Security and AWS</p>
-            <h2>Hi, I'm <span>Abhay Raut</span>,<br>A college student pursuing <br>a degree in computer science<br>(CyberSecurity, IOT & BTC). </h2>
+            <h2>Hi, I'm <span>Abhay Raut</span>,<br>A college student pursuing a degree in <br>computer science (CyberSecurity, IOT & BTC). </h2>
             <h3>Welcome to my portfolio!</h3>
       </div>
     </div>
 </div>
 
 <!------------------------About------------------------->
-<div class="about">
+<div id="about">
       <div class="container">
             <div class="row">
                   <div class="about-col-1">
                         <img src="mypic.jpg" >
                   </div>
                   <div class="about-col-2">
-                        <h1>About Me</h1>
+                        <h1 class="sub-title">About Me</h1>
+                        <p> Known for strong analytical skills and a keen attention to detail, demonstrated through successful academic projects and leadership roles in campus organizations. Eager to apply classroom knowledge to real-world challenges and contribute to a dynamic team. Committed to continuous learning and personal growth, with a proactive approach to problem-solving and collaboration.</p>
+                        
+                        <div class="tab-titles">
+                              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                              <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                              <ul>
+                                    <li><span>Cyber Security</span><br>Testig app/web and securing the app/web</li>
+                                    <li><span>AWS</span><br>Creating, maintaining, and evolving AWS cloud infrastructures</li>
+                                    <li><span>Programming</span><br>C, Python, SQL</li>
+                                    <li><span>Tools</span><br>VS Code, PyCharm, Git, GitHub, AWS</li>
+                              </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                              <ul>
+                                    <li><span>Current</span><br>Academic Project on various filed</li>
+                                    <li><span>2023-Current</span><br>Tutorial teaching</li>
+                              </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                              <ul>
+                                    <li><span>2022-current</span><br>B.E. Computer science at Mumbai University</li>
+                                    <li><span>2022</span><br>12th science from HSC</li>
+                                    <li><span>2020</span><br>10th from ssc</li>
+                              </ul>
+                        </div>
                   </div>
             </div>
       </div>
 </div>
 
+
+
+<div id="service">
+
+</div>
+
+<!------------------------Portfolio------------------------->
+
+<div id="portfolio">
+
+</div>
+<script>
+
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname){
+            for(tablink of tablinks){
+                  tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                  tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+      }
+      
+</script>
 
 </body>
 </html>
