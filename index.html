@@ -10,13 +10,15 @@
     <div class="container">
       <nav>
             <img src="logo.png" class="logo">
-            <ul>
+            <ul id="sidemenu">
                   <li><a href="#header">Home</a></li>
                   <li><a href="#about">About</a></li>
                   <li><a href="#services">Service</a></li>
                   <li><a href="#portfolio">Portfolio</a></li>
                   <li><a href="#contact">Contact</a></li>
+                  <i class="fas fa-times" onclick="closemenu()"></i>
             </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
       </nav>
       <div class="header-text">
             <p>Cloud Engineer and Developer</p>
@@ -154,6 +156,7 @@ I
                               <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                               <button type="submit" class="btn btn2">Submit</button>
                         </form>
+                        <span id="msg"></span>
                   </div>
             </div>
       </div>
@@ -179,8 +182,23 @@ I
       }
 
 </script>
+
 <script>
-      const scriptURL = '<your_google_sheet_script_url_here>'
+       
+       var sidemenu = document.getElementById("sidemenu");
+
+       function openmenu(){
+            sidemenu.style.right = "0";
+       }
+       function closemenu(){
+            sidemenu.style.right = "-200px";
+       }
+
+
+</script>
+
+<script>
+      const scriptURL = '<https://script.google.com/macros/s/AKfycbxbWGcCY9i8mA13vg8_J7_LR_kih2D_5tr2J5cYi2YPMbzMBXf1cyzle5y3Yg6sBVRL/exec'
       const form = document.forms['submit-to-google-sheet']
       const msg = document.getElementById("msg")
     
