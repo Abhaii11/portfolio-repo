@@ -68,7 +68,6 @@ nav ul li a:hover::after{
 .header-text {
     margin-top: 20%;
     font-size: 20px;
-    
 }
 
 .header-text h2 {
@@ -406,22 +405,40 @@ nav .fas{
 
 @media only screen and (max-width: 600px) {
     #header {
-        background-image: url('background.png');
+        background-image: url('backgroundCopy.png');
         height: 50vh;
     }
-    .header-text{
-        margin-top: 100%;
+    .header-text {
+        margin-top: 10%;
         font-size: 16px;
+        /* Added for readability */
+        background-color: transparent; 
+        padding: 20px;
+        border-radius: 10px;
     }
     .header-text h1{
         font-size: 30px;
+    }
+    .header-text h2 {
+    font-size: 25px;
+    margin-top: 20px;
+    text-size-adjust: auto;
+    }
+    .header-text h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    }
+
+    .container {
+        padding-left: 5%;
+        padding-right: 5%;
     }
     nav .fas{
         display: block;
         font-size: 25px;
     }
     nav ul{
-        background: #ff004f;
+        background: #13b9bc;
         position: fixed;
         top: 0;
         right: -200px;
@@ -444,14 +461,23 @@ nav .fas{
     .sub-title{
         font-size: 40px;
     }
+    #about {
+    padding: 10px 0;
+    }
     .about-col-1, .about-col-2{
-        flex-basis: 100px;
+        flex-basis: 100%; /* This makes the columns stack vertically */
     }
     .about-col-1{
         margin-bottom: 30px;
+        display: grid;
+        place-items: center;
     }
     .about-col-2{
         font-size: 14px;
+    }
+    .about-col-1 img {
+    width: 70%;
+    border: 2px solid steelblue;
     }
     .tab-links{
         font-size: 16px;
