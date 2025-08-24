@@ -54,60 +54,6 @@ body{
     margin-top: 5px;
 }
 
-/* ---- Timeline ---- */
-#timeline .timeline {
-    margin: 50px 0 0 0;
-    position: relative;
-    padding-left: 30px;
-}
-#timeline .timeline:before {
-    content: "";
-    position: absolute;
-    left: 18px;
-    top: 0;
-    bottom: 0;
-    width: 4px;
-    background: #116466;
-    border-radius: 4px;
-}
-.timeline-item {
-    display: flex;
-    align-items: flex-start;
-    position: relative;
-    margin-bottom: 32px;
-}
-.timeline-dot {
-    width: 18px;
-    height: 18px;
-    background: #13b9bc;
-    border-radius: 50%;
-    position: absolute;
-    left: 10px;
-    top: 8px;
-    border: 3px solid #222;
-}
-.timeline-content {
-    background: #202324;
-    border-radius: 8px;
-    padding: 20px 30px;
-    margin-left: 45px;
-    box-shadow: 0 2px 6px #0c22234f;
-    color: #bde1ec;
-    width: 100%;
-    max-width: 500px;
-}
-.timeline-content h3 {
-    margin: 0 0 6px 0;
-    color: #13b9bc;
-    font-size: 22px;
-}
-.timeline-date {
-    font-size: 12px;
-    color: #51d4e8;
-    font-weight: bold;
-    margin-bottom: 8px;
-    display: block;
-}
 
 /* Rest of your original style.css unchanged below... */
 
@@ -143,7 +89,23 @@ body{
     padding: 2vw 3vw 2vw 3vw;
     box-sizing: border-box;
     z-index: 3;
+    -webkit-backdrop-filter: blur(0.5px);
     backdrop-filter: blur(0.5px);
+}
+
+.about-extra {
+    margin-top:12px;
+    color:#7e9faf;
+}
+
+.about-cta {
+    margin:20px 0 10px 0;
+}
+
+.tech-icon-bg {
+    background: white;
+    border-radius: 6px;
+    padding: 4px;
 }
 
 @media only screen and (max-width: 900px) {
@@ -227,6 +189,8 @@ nav ul li a:hover::after{
 .header-text h2 {
     font-size: 35px;
     margin-top: 20px;
+    -webkit-text-size-adjust: auto;
+    -ms-text-size-adjust: auto;
     text-size-adjust: auto;
 }
 .header-text h3 {
@@ -659,6 +623,8 @@ nav .fas{
     .header-text h2 {
     font-size: 25px;
     margin-top: 20px;
+    -webkit-text-size-adjust: auto;
+    -ms-text-size-adjust: auto;
     text-size-adjust: auto;
     }
     .header-text h3 {
