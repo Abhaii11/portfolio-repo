@@ -18,16 +18,17 @@
     <div class="container">
       <nav>
             <img src="assets/logo.png" class="logo">
+            <div id="menu-overlay" onclick="closemenu()"></div>
             <ul id="sidemenu">
-                  <li><a href="#header">Home</a></li>
-                  <li><a href="#about">About</a></li>
-                  <li><a href="#services">Service</a></li>
-                  <li><a href="#portfolio">Projects</a></li>
-                  <li><a href="#research">Research</a></li>
-                  <li><a href="#certificates">Certificates</a></li>
-                  <li><a href="#contact">Contact</a></li>
-                  <i class="fas fa-times" onclick="closemenu()"></i>
+                  <li><a href="#header" onclick="closemenu()">Home</a></li>
+                  <li><a href="#about" onclick="closemenu()">About</a></li>
+                  <li><a href="#services" onclick="closemenu()">Service</a></li>
+                  <li><a href="#portfolio" onclick="closemenu()">Projects</a></li>
+                  <li><a href="#research" onclick="closemenu()">Research</a></li>
+                  <li><a href="#certificates" onclick="closemenu()">Certificates</a></li>
+                  <li><a href="#contact" onclick="closemenu()">Contact</a></li>
             </ul>
+            <i id="closemenu-btn" class="fas fa-times" onclick="closemenu()"></i>
             <i class="fas fa-bars" onclick="openmenu()"></i>
       </nav>
       <div class="header-text">
@@ -268,15 +269,21 @@
 <script>
        
        var sidemenu = document.getElementById("sidemenu");
+       var menuOverlay = document.getElementById("menu-overlay");
+       var closeBtn = document.getElementById("closemenu-btn");
 
        function openmenu(){
-            sidemenu.style.right = "0";
+            sidemenu.classList.add("open");
+            menuOverlay.classList.add("active");
+            document.body.classList.add("menu-open");
+            closeBtn.classList.add("active");
        }
        function closemenu(){
-            sidemenu.style.right = "-200px";
+            sidemenu.classList.remove("open");
+            menuOverlay.classList.remove("active");
+            document.body.classList.remove("menu-open");
+            closeBtn.classList.remove("active");
        }
-
-
 </script>
 
 <script>
