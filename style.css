@@ -69,7 +69,7 @@ body{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url("../assets/background1.jpg");
+    background-image: url("assets/background1.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -127,7 +127,7 @@ body{
   #header {
     min-height: 58vh;
     height: auto;
-    background-image: url("../assets/background1Copy.png");
+    background-image: url("assets/background1Copy.png");
     background-attachment: scroll;
     background-size: cover;
     background-position: center center;
@@ -607,7 +607,7 @@ nav .fas{
 @media only screen and (max-width: 600px) {
     #header {
          position: relative;
-         background-image: url("../assets/background1Copy.png");
+         background-image: url("assets/background1Copy.png");
          height: 40vh;
     }
     .header-text {
