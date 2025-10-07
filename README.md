@@ -48,7 +48,7 @@ portfolio-repo/
 - Update Tech Stack in `index.html` under `#techstack`
 - Add/replace images in `/assets/` and update sources accordingly
 - Edit About, Projects, Certificates, and Research as your experience grows
-- Resume placed in `/assets/AbhayRESUME(@2).pdf`
+- Resume placed in `/assets/AbhayRESUME.pdf`
 
 ---
 
